@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Lato:wght@300;400;700&display=swap");
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -1168,7 +1167,6 @@ ul, ol {
 }
 
 .h0 {
-  font-family: "Kanit", sans-serif;
   font-size: 80px;
   line-height: 120%;
   font-weight: 400;
@@ -1176,7 +1174,6 @@ ul, ol {
 }
 @media screen and (max-width: 960px) {
   .h0 {
-    font-family: "Kanit", sans-serif;
     font-size: 40px;
     line-height: 120%;
     font-weight: 400;
@@ -1185,7 +1182,6 @@ ul, ol {
 }
 @media screen and (max-width: 340px) {
   .h0 {
-    font-family: "Kanit", sans-serif;
     font-size: 24px;
     line-height: 120%;
     font-weight: 400;
@@ -1196,14 +1192,12 @@ ul, ol {
 h1 {
   color: #0C1F38;
   z-index: 5;
-  font-family: "Kanit", sans-serif;
   font-size: 72px;
   line-height: 110%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h1 {
-    font-family: "Kanit", sans-serif;
     font-size: 52px;
     line-height: 110%;
     font-weight: 400;
@@ -1211,7 +1205,6 @@ h1 {
 }
 @media screen and (max-width: 340px) {
   h1 {
-    font-family: "Kanit", sans-serif;
     font-size: 48px;
     line-height: 120%;
     font-weight: 400;
@@ -1220,14 +1213,12 @@ h1 {
 
 h2 {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 64px;
   line-height: 110%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h2 {
-    font-family: "Kanit", sans-serif;
     font-size: 40px;
     line-height: 120%;
     font-weight: 400;
@@ -1235,7 +1226,6 @@ h2 {
 }
 @media screen and (max-width: 340px) {
   h2 {
-    font-family: "Kanit", sans-serif;
     font-size: 36px;
     line-height: 120%;
     font-weight: 400;
@@ -1244,14 +1234,12 @@ h2 {
 
 h3 {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 48px;
   line-height: 100%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h3 {
-    font-family: "Kanit", sans-serif;
     font-size: 32px;
     line-height: 120%;
     font-weight: 400;
@@ -1259,7 +1247,6 @@ h3 {
 }
 @media screen and (max-width: 340px) {
   h3 {
-    font-family: "Kanit", sans-serif;
     font-size: 28px;
     line-height: 130%;
     font-weight: 400;
@@ -1268,14 +1255,12 @@ h3 {
 
 h4 {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 32px;
   line-height: 120%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h4 {
-    font-family: "Kanit", sans-serif;
     font-size: 28px;
     line-height: 130%;
     font-weight: 400;
@@ -1283,7 +1268,6 @@ h4 {
 }
 @media screen and (max-width: 340px) {
   h4 {
-    font-family: "Kanit", sans-serif;
     font-size: 20px;
     line-height: 140%;
     font-weight: 400;
@@ -1292,14 +1276,12 @@ h4 {
 
 h5 {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 24px;
   line-height: 140%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h5 {
-    font-family: "Kanit", sans-serif;
     font-size: 20px;
     line-height: 140%;
     font-weight: 400;
@@ -1308,14 +1290,12 @@ h5 {
 
 h6 {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   h6 {
-    font-family: "Kanit", sans-serif;
     font-size: 14px;
     line-height: 150%;
     font-weight: 400;
@@ -1323,14 +1303,12 @@ h6 {
 }
 
 .h7 {
-  font-family: "Kanit", sans-serif;
   font-size: 14px;
   line-height: 150%;
   font-weight: 200;
 }
 @media screen and (max-width: 960px) {
   .h7 {
-    font-family: "Kanit", sans-serif;
     font-size: 12px;
     line-height: 150%;
     font-weight: 200;
@@ -1340,14 +1318,12 @@ h6 {
 p {
   letter-spacing: 0px;
   color: #505C68;
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 17px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   p {
-    font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 17px;
     font-weight: 400;
@@ -1355,7 +1331,6 @@ p {
 }
 @media screen and (max-width: 340px) {
   p {
-    font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 15px;
     font-weight: 400;
@@ -1373,14 +1348,12 @@ p {
 }
 
 .p1 {
-  font-family: "Lato", sans-serif;
   font-size: 26px;
   line-height: 30px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .p1 {
-    font-family: "Lato", sans-serif;
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
@@ -1388,7 +1361,6 @@ p {
 }
 @media screen and (max-width: 340px) {
   .p1 {
-    font-family: "Lato", sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -1396,14 +1368,12 @@ p {
 }
 
 .p2 {
-  font-family: "Lato", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .p2 {
-    font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -1411,14 +1381,12 @@ p {
 }
 
 .p3 {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 17px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .p3 {
-    font-family: "Lato", sans-serif;
     font-size: 16px;
     line-height: 17px;
     font-weight: 400;
@@ -1426,14 +1394,12 @@ p {
 }
 
 .p4 {
-  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .p4 {
-    font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -1441,14 +1407,12 @@ p {
 }
 
 .p5 {
-  font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .p5 {
-    font-family: "Lato", sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -1477,14 +1441,12 @@ span {
   color: #0C1F38;
   letter-spacing: 1px;
   text-transform: none;
-  font-family: "Kanit", sans-serif;
   font-size: 72px;
   line-height: 110%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .letter-h1 {
-    font-family: "Kanit", sans-serif;
     font-size: 52px;
     line-height: 110%;
     font-weight: 400;
@@ -1513,7 +1475,6 @@ b {
 
 .h-xl {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 80px;
   line-height: 120%;
   font-weight: 400;
@@ -1521,7 +1482,6 @@ b {
 }
 @media screen and (max-width: 960px) {
   .h-xl {
-    font-family: "Kanit", sans-serif;
     font-size: 40px;
     line-height: 120%;
     font-weight: 400;
@@ -1531,7 +1491,6 @@ b {
 
 .h-l {
   color: #0C1F38;
-  font-family: "Kanit", sans-serif;
   font-size: 80px;
   line-height: 120%;
   font-weight: 400;
@@ -1539,7 +1498,6 @@ b {
 }
 @media screen and (max-width: 960px) {
   .h-l {
-    font-family: "Kanit", sans-serif;
     font-size: 40px;
     line-height: 120%;
     font-weight: 400;
@@ -1548,14 +1506,12 @@ b {
 }
 
 .hbig {
-  font-family: "Kanit", sans-serif;
   font-size: 80px;
   line-height: 120%;
   font-weight: 400;
 }
 @media screen and (max-width: 960px) {
   .hbig {
-    font-family: "Kanit", sans-serif;
     font-size: 56px;
     line-height: 120%;
     font-weight: 400;

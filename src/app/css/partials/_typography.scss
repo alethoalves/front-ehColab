@@ -1,8 +1,6 @@
 // Typography of project
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Lato:wght@300;400;700&display=swap');
 @mixin typeface-1($size, $device: desktop) {
 
-font-family: "Kanit", sans-serif;;
 
   @if $size == hbig and $device == desktop {
     font-size: 80px;
@@ -121,7 +119,6 @@ font-family: "Kanit", sans-serif;;
 }
 
 @mixin typeface-2($size: p2, $device: desktop) {
-    font-family: "Lato", sans-serif;
   @if $size == p1 and $device == desktop {
     font-size: 26px;
     line-height: 30px;

@@ -1,4 +1,5 @@
 import "@/app/css/style.css";
+import { montserrat, neueLight } from "./ui/fonts";
 
 
 export const metadata = {
@@ -6,10 +7,14 @@ export const metadata = {
   description: "Conexão valiosa e acessível",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="pt-br">
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body suppressHydrationWarning={true} className={`${montserrat.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
