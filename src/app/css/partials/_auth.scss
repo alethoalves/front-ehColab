@@ -1,0 +1,79 @@
+//POSICIONAMENTO
+.container-auth{
+    max-width: $container-l;
+    display:flex ;
+    align-items:center;
+    justify-content:space-around;
+    margin: 0 auto;
+    padding-top: $gap-6;
+    
+    
+}
+.container-auth-item-1{
+        max-width: 516px;
+        padding: 0 $gap-2;
+        
+        .auth-logo,.header{
+            margin-bottom: $gap-5;
+            @include responsive(s){
+                margin-bottom: $gap-4;
+            }
+            @include responsive(xs){
+                margin-bottom: $gap-3;
+            }
+        }
+        .content{
+            .content-item-1{
+                margin-bottom: $gap-2;
+                @include responsive(s){
+                    margin-bottom: $gap-1;
+                }
+                @include responsive(xs){
+                    margin-bottom: $gap-1;
+                }
+            }
+            
+        }
+        .actions{
+            margin: $gap-4 0;
+                @include responsive(s){
+                    margin: $gap-3 0;
+                }
+                @include responsive(xs){
+                    margin: $gap-2 0;
+                }
+            .actions-item-1,.actions-item-2,.actions-item-3{
+                margin-bottom: $gap-3;
+                @include responsive(s){
+                    margin-bottom: $gap-2;
+                }
+                @include responsive(xs){
+                    margin-bottom: $gap-1;
+                }
+            }
+            .actions-item-1{
+                display: flex;
+                justify-content: space-between;
+                @include responsive(xs){
+                    flex-direction: column;
+                    a{
+                        margin-top: $gap-2;
+                        text-align: right;
+                    } 
+                }
+            }
+        }
+    }
+    .container-auth-item-2{
+        width: 521px;
+        padding: 0 $gap-2;
+        @include responsive(s){
+            display: none;
+        }
+    }  
+//ESTILIZAÇÃO
+.container-auth{
+    h4{
+        color: $primary-darken;
+    }
+}

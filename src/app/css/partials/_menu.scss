@@ -1,0 +1,93 @@
+.app-menu{
+    transition:  .7s ease;
+    width: 210px;
+    @include responsive(s){
+        display: none;
+    }
+    height: 100vh;
+    background-color: $white-light;
+    position: fixed;
+    z-index: 1200;
+    .logo{
+        width: 100%;
+        height: 88px;
+        padding: $gap-2;
+        p{
+            white-space: nowrap;
+            color: $white-light;
+            letter-spacing: 2px;
+            @include responsive(s){
+                display: none;
+              }
+        }
+        
+        //background-color: $primary-normal;
+        background: linear-gradient(to left, #1B69D2, #1961c0);
+        @include responsive(s){
+            height: 60px;
+            .img-logo{
+                margin-right: 0;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        
+    }
+    .content{
+        height: 100%;
+        margin-top: 20%;
+        a, {
+            padding: $gap-2;
+            display: flex;
+            
+            border-left: 4px solid $white-dark;
+            
+        };
+        a:hover, .active{
+            border-left: 4px solid $primary-normal;
+            background-color: $white-normal;
+            .h7{
+                color: $primary-normal
+            }
+        }
+        svg{
+            width: 18px;
+            color: $primary-normal;
+            
+        }
+        .h7{
+            white-space: nowrap;
+            margin-left: $gap-2;
+            color: $gray-400;
+            
+            
+        }
+        
+    }
+}
+.app-menu-slim{
+    width: 88px;
+    p{
+        display: none;
+    }
+    .logo{
+        .img-logo{
+            margin-right: 0;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        a{
+            justify-content: center;
+        }
+        p{
+            display: none;
+        }
+        
+    }
+}
