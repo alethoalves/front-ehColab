@@ -23,11 +23,11 @@ export const Auth = () => {
       setFormSignin(!formSignin)
     }
     // Formulário
-    const handleFormSubmit = async (data) => {
+    const handleFormSubmitSignin = async (data) => {
       
       setLoading(true);
       setErrorMessage('');
-      console.log("ENTROU")
+      console.log(data)
       try {
         
         await new Promise((resolve) => setTimeout(resolve, 7000));
@@ -41,7 +41,7 @@ export const Auth = () => {
       }
     };
    
-    const { control, handleSubmit} = useForm({
+    const { control: controlSignin, handleSubmit: handleSubmitSignin} = useForm({
       resolver: zodResolver(signinSchema),
       defaultValues: {
         email: '',
@@ -91,10 +91,10 @@ export const Auth = () => {
             
             <div className="card signin">
               {formSignin&&
-                <form onSubmit={handleSubmit(handleFormSubmit)}>
+                <form onSubmit={handleSubmitSignin(handleFormSubmitSignin)}>
                   <div className="content">
                       <Input
-                      control={control}
+                      control={controlSignin}
                       name="email"
                       className='content-item-1 '
                       label='E-mail'
@@ -105,7 +105,7 @@ export const Auth = () => {
                       disabled={loading}
                       />
                       <Input
-                      control={control}
+                      control={controlSignin}
                       name="senha"
                       className='content-item-2 '
                       label='Senha'
