@@ -2,31 +2,32 @@
 
 // Brand-colors
 
-$primary-darken:#083B7F;
-$primary-dark:#0F4EA2;
-$primary-normal:#1B69D2;
-$primary-light:#4587DF;
+$primary-darken:#321A5A;
+$primary-dark:#6528AD;
+$primary-normal:#9756FF;
+$primary-light:#AA76FD;
+$primary-lighten:#c7aaf6;
 .primary-darken{
     color:$primary-darken;
 };
 
 // Neutral-colors
-$white-darken:#DAF0FF;
-$white-dark:#E8F6FF;
-$white-normal:#F4FBFF;
+$white-darken:#F3EEF8;
+$white-dark:#F6F2FA;
+$white-normal:#FAF9FD;
 $white-light:#FFFFFF;
 
-$black-dark:#041123;
-$black-normal:#07172E;
-$black-light:#0C1F38;
+$black-dark:#0F081B;
+$black-normal:#190D2D;
+$black-light:#23123F;
 
 // Gray Scale
-$gray-600:#505C68;
-$gray-500:#6C7781;
-$gray-400:#89919A;
-$gray-300:#A6ACB3;
-$gray-200:#C3C7CC;
-$gray-100:#E0E2E5;
+$gray-600:#A1A1A0;
+$gray-500:#B1B1B0;
+$gray-400:#C1C1C0;
+$gray-300:#D1D1D0;
+$gray-200:#E1E1E0;
+$gray-100:#F1F1F0;
 
 
 // Auxiliary colors
@@ -61,12 +62,12 @@ $warning-light: #ffd76b;
 
 .color-gradient{
     display: inline-block; 
-    background: linear-gradient(224.78deg, #1B69D2 8.12%, #0E366C 92.21%);
+    background: linear-gradient(224.78deg, #321A5A 8.12%, #6528AD 92.21%);
     -webkit-text-fill-color: transparent;
 }
 
 .bg-gradient{
-    background: linear-gradient(224.78deg, #1B69D2 8.12%, #0E366C 92.21%);
+    background: linear-gradient(224.78deg, #321A5A 8.12%, #6528AD 92.21%);
 }
 
 

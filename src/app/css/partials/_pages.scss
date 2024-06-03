@@ -1,0 +1,10 @@
+.dashboard-pages{
+    max-width: 1080px;
+    margin-left: 220px;
+    padding: $gap-5;
+    @include responsive (s){
+        width: 100vw;
+        margin: 0;
+        padding: $gap-2;
+    }
+}

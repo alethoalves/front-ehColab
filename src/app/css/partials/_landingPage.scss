@@ -1,0 +1,13 @@
+.main-lp{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $primary-darken;
+    h3{
+        color:$primary-light;
+        margin-bottom: $gap-2;
+    }
+    span{color:$white-normal}
+}

@@ -8,11 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    p,svg{
+        margin: 0 $gap-1;
+    }
     .btn-icon{
         width: 20px;
-        margin-right: $gap-1;
+        
         color: $primary-normal;
     }
+    
     .btn-icon-green{
         color: $success-normal;
     }
@@ -24,12 +28,14 @@
 .btn-primary{
     background-color: $primary-normal;
     transition: all .3s ease;
-    p{
+    p,.btn-icon{
         color: $white-light;
     }
+    
     &:hover{
         background-color: lighten($primary-normal, 5%);
     }
+    
 }
 
 .btn-secondary{
