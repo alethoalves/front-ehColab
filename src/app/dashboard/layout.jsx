@@ -1,9 +1,13 @@
 "use client"
+import { isLogged } from "@/api/clientReq";
 import { neueBold, neueRegular } from "@/app/ui/fonts";
+import useAuth from "@/lib/useAuth";
 import { RiHome3Line, RiServiceLine, RiShutDownLine, RiStore3Line, RiUser3Line } from "@remixicon/react";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from "react";
 const Layout = ({children}) => {
+    
     const pathname = usePathname();
     return(
         

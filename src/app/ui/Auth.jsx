@@ -6,14 +6,17 @@ import { RiArrowRightLine, RiAtLine, RiLock2Line, RiPhoneLine, RiUser6Line } fro
 import { Input } from "./Input";
 import Link from "next/link";
 import { Checkbox } from "./Checkbox";
-import { signinSchema, signupSchema } from "@/app/zodSchemas/authSchema.js";
+import { signinSchema, signupSchema } from "@/zodSchemas/authSchema.js";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Notification } from "./Notification";
+import { useRouter } from "next/navigation";
+import { signin } from "@/api/clientReq";
 
 
 export const Auth = () => {
+    const router = useRouter()
 
     const [loading, setLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
@@ -27,12 +30,12 @@ export const Auth = () => {
       
       setLoading(true);
       setErrorMessage('');
-      console.log(data)
+
       try {
-        
-        await new Promise((resolve) => setTimeout(resolve, 7000));
-        const response = false; // Simule a resposta do servidor
-        console.log(response); 
+        const response = await signin(data);
+        if(response.success){
+          router.push('/dashboard')
+        } 
       } catch (error) {
         console.error('Error:', error);
         setErrorMessage(error.response?.data?.error?.message ?? "Erro na conexão com o servidor.")
