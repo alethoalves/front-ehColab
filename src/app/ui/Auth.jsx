@@ -34,10 +34,14 @@ export const Auth = () => {
       try {
         const response = await signin(data);
         router.push('/dashboard')
-        console.log("ENTROU APOS A CONSULTA")
+        
         if(response.success){
-          router.push('/dashboard')
-          console.log("CONSULTA BEM SUCEDIDA")
+          // Adicionar um pequeno atraso antes de redirecionar
+          setTimeout(() => {
+              router.push('/dashboard');
+          }, 1000); // Ajuste o tempo de acordo com suas necessidades
+          
+          
         } 
       } catch (error) {
         console.error('Error:', error);
