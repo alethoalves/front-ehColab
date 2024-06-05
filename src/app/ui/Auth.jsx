@@ -35,10 +35,7 @@ export const Auth = () => {
         const response = await signin(data);
         
         if(response.success){
-          // Adicionar um pequeno atraso antes de redirecionar
-          setTimeout(() => {
-              router.push('/dashboard');
-          }, 1000); // Ajuste o tempo de acordo com suas necessidades
+          window.location.href = '/dashboard'
           
           
         } 
