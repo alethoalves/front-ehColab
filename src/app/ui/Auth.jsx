@@ -34,8 +34,10 @@ export const Auth = () => {
       try {
         const response = await signin(data);
         router.push('/dashboard')
+        console.log("ENTROU APOS A CONSULTA")
         if(response.success){
           router.push('/dashboard')
+          console.log("CONSULTA BEM SUCEDIDA")
         } 
       } catch (error) {
         console.error('Error:', error);
