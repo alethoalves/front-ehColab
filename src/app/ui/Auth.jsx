@@ -33,6 +33,7 @@ export const Auth = () => {
 
       try {
         const response = await signin(data);
+        router.push('/dashboard')
         if(response.success){
           router.push('/dashboard')
         } 
