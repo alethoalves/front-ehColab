@@ -35,8 +35,11 @@ export const Auth = () => {
         const response = await signin(data);
         
         if(response.success){
-          window.location.href = '/dashboard'
-          
+          //window.location.href = '/dashboard'
+          // Adicionar um pequeno atraso antes de redirecionar
+          setTimeout(() => {
+            router.push('/dashboard');
+        }, 7000); // 100 milissegundos = 0.1 segundos
           
         } 
       } catch (error) {
