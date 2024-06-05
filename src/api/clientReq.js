@@ -1,11 +1,10 @@
 import { req } from "@/api/axios.js";
-import { setCookie,getCookie } from 'cookies-next';
+import { setCookie,getCookie, deleteCookie } from 'cookies-next';
 
 
 export const isLogged = async () => {
     try {
       const token = getCookie('authToken')
-      console.log(token)
       if (!token) { 
         return false;
       }
@@ -22,6 +21,16 @@ export const isLogged = async () => {
     }
   };
 
+export const logout = async () => {
+    try {
+        deleteCookie('authToken')
+        
+        return true
+        
+    } catch (error) {
+        return false
+    } 
+}; 
 
 export const signin = async (data, reqParams) => {
     try {

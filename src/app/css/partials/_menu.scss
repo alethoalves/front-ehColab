@@ -1,6 +1,6 @@
 .nav-bar{
     padding: $gap-1;
-    width: 220px;
+    width: 230px;
     height: 100vh;
     position: fixed;
     display: flex;
@@ -38,7 +38,8 @@
         }
     }
     svg{
-        width: 20px;
+        width: 24px;
+        height: 24px;
         margin-right: $gap-2;
     }
     p, svg{

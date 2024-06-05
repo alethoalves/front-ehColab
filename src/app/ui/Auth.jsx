@@ -12,7 +12,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Notification } from "./Notification";
 import { useRouter } from "next/navigation";
-import { signin } from "@/api/clientReq";
+import { signin, signup } from "@/api/clientReq";
 
 
 export const Auth = () => {
@@ -58,12 +58,12 @@ export const Auth = () => {
       
       setLoading(true);
       setErrorMessage('');
-      console.log(data)
       try {
         
-        await new Promise((resolve) => setTimeout(resolve, 7000));
-        const response = false; // Simule a resposta do servidor
-        console.log(response); 
+        const response = await signup(data);
+        if(response.success){
+          router.push('/dashboard')
+        } 
       } catch (error) {
         console.error('Error:', error);
         setErrorMessage(error.response?.data?.error?.message ?? "Erro na conexão com o servidor.")

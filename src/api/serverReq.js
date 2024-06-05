@@ -1,4 +1,4 @@
-import { getCookie } from "cookies-next";
+import { getCookie, deleteCookie } from "cookies-next";
 import { cookies } from "next/headers"; //Funciona apenas do lado do servidor
 import { req } from "./axios";
 
@@ -15,8 +15,10 @@ export const isLogged = async () => {
         }
       });
       return true
-      
+
     } catch (error) {
       return false
     }
   };
+
+  

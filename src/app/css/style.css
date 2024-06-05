@@ -1659,7 +1659,7 @@ svg, img {
 
 .nav-bar {
   padding: 8px;
-  width: 220px;
+  width: 230px;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -1698,7 +1698,8 @@ svg, img {
   color: #FFFFFF;
 }
 .nav-bar svg {
-  width: 20px;
+  width: 24px;
+  height: 24px;
   margin-right: 16px;
 }
 .nav-bar p, .nav-bar svg {

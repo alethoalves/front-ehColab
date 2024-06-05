@@ -1,12 +1,11 @@
-
 'use client'
 
 import useAuth from "@/lib/useAuth";
 
-const Page =  () => {
+const Page = () => {
     useAuth()
     return(
-        <p>Profile</p>
+        <p>Chat</p>
     )
 }
 
