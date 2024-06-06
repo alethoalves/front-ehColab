@@ -37,9 +37,13 @@ export const Auth = () => {
         if(response.success){
           //window.location.href = '/dashboard'
           // Adicionar um pequeno atraso antes de redirecionar
-          setTimeout(() => {
-            router.push('/dashboard');
-        }, 7000); // 100 milissegundos = 0.1 segundos
+          // Verificação ativa do cookie antes de redirecionar
+          const checkCookie = setInterval(() => {
+            if (getCookie('authToken')) {
+              clearInterval(checkCookie);
+                  router.push('/dashboard');
+                }
+            }, 50); // Verifica a cada 50ms
           
         } 
       } catch (error) {
