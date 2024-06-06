@@ -36,9 +36,7 @@ export const Auth = () => {
         const response = await signin(data);
         
         if(response.success){
-          //window.location.href = '/dashboard'
-          // Adicionar um pequeno atraso antes de redirecionar
-          // Verificação ativa do cookie antes de redirecionar
+          
           const checkCookie = setInterval(() => {
             if (getCookie('authToken')) {
               clearInterval(checkCookie);
@@ -73,7 +71,12 @@ export const Auth = () => {
         
         const response = await signup(data);
         if(response.success){
-          router.push('/dashboard')
+          const checkCookie = setInterval(() => {
+            if (getCookie('authToken')) {
+              clearInterval(checkCookie);
+                  router.push('/dashboard'); 
+                } 
+            }, 50); // Verifica a cada 50ms
         } 
       } catch (error) {
         console.error('Error:', error);
