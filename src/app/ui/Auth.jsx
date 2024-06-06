@@ -41,7 +41,7 @@ export const Auth = () => {
           const checkCookie = setInterval(() => {
             if (getCookie('authToken')) {
               clearInterval(checkCookie);
-                  router.push('/dashboard');
+                  router.push('/dashboard'); 
                 }
             }, 50); // Verifica a cada 50ms
           
