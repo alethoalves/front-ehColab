@@ -42,7 +42,7 @@ export const Auth = () => {
             if (getCookie('authToken')) {
               clearInterval(checkCookie);
                   router.push('/dashboard'); 
-                }
+                } 
             }, 50); // Verifica a cada 50ms
           
         } 
